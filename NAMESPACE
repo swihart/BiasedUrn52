@@ -1,4 +1,4 @@
-useDynLib(BiasedUrn52)
+useDynLib(BiasedUrn)
 
 # Functions in urn1.R
 export(dFNCHypergeo)
