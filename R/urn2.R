@@ -1,4 +1,4 @@
-# Package BiasedUrn, file urn2.R 
+# Package BiasedUrn52, file urn2.R 
 # R interface to multivariate noncentral hypergeometric distributions
 
 # *****************************************************************************
@@ -23,7 +23,7 @@ function(
       xx <- as.integer(x);
    }
    .Call("dMFNCHypergeo", xx, as.integer(m), as.integer(n),         
-   as.double(odds), as.double(precision), PACKAGE = "BiasedUrn");
+   as.double(odds), as.double(precision), PACKAGE = "BiasedUrn52");
 }
 
 
@@ -49,7 +49,7 @@ function(
       xx <- as.integer(x);
    }
    .Call("dMWNCHypergeo", xx, as.integer(m), as.integer(n),         
-   as.double(odds), as.double(precision), PACKAGE = "BiasedUrn");
+   as.double(odds), as.double(precision), PACKAGE = "BiasedUrn52");
 }
 
 
@@ -68,7 +68,7 @@ function(nran, m, n, odds, precision=1E-7) {
    as.integer(n),          # Number of balls drawn from urn, scalar
    as.double(odds),        # Odds for each color, vector
    as.double(precision),   # Precision of calculation, scalar
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -87,7 +87,7 @@ function(nran, m, n, odds, precision=1E-7) {
    as.integer(n),          # Number of balls drawn from urn, scalar
    as.double(odds),        # Odds for each color, vector
    as.double(precision),   # Precision of calculation, scalar
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -106,7 +106,7 @@ momentsMFNCHypergeo <- function(
    is.numeric(odds), is.numeric(precision));
    res <- .Call("momentsMFNCHypergeo", as.integer(m), 
    as.integer(n), as.double(odds), as.double(precision),
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
    # Convert result to data frame
    colnames(res) <- list("xMean","xVariance")
    as.data.frame(res);   
@@ -128,7 +128,7 @@ momentsMWNCHypergeo <- function(
    is.numeric(odds), is.numeric(precision));
    res <- .Call("momentsMWNCHypergeo", as.integer(m), 
    as.integer(n), as.double(odds), as.double(precision),
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
    # Convert result to data frame
    colnames(res) <- list("xMean","xVariance")
    as.data.frame(res);   
@@ -212,7 +212,7 @@ function(mu, m, n, precision=0.1)  {
    as.integer(m),         # Number of balls of each color in urn, vector
    as.integer(n),         # Number of balls drawn from urn, scalar
    as.double(precision),  # Precision of calculation, scalar
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -237,7 +237,7 @@ function(mu, m, n, precision=0.1)  {
    as.integer(m),         # Number of balls of each color in urn, vector
    as.integer(n),         # Number of balls drawn from urn, scalar
    as.double(precision),  # Precision of calculation, scalar
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -263,7 +263,7 @@ function(mu, n, N, odds, precision=0.1)  {
    as.integer(N),         # Number of balls in urn before sampling, scalar
    as.double(odds),       # Odds for each color, vector
    as.double(precision),  # Precision of calculation, scalar (ignored)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -289,7 +289,7 @@ function(mu, n, N, odds, precision=0.1)  {
    as.integer(N),         # Number of balls in urn before sampling, scalar
    as.double(odds),       # Odds for each color, vector
    as.double(precision),  # Precision of calculation, scalar (ignored)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 

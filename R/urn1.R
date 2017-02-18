@@ -1,4 +1,4 @@
-# Package BiasedUrn, file urn1.R 
+# Package BiasedUrn52, file urn1.R 
 # R interface to univariate noncentral hypergeometric distributions
 
 # *****************************************************************************
@@ -16,7 +16,7 @@ function(x, m1, m2, n, odds, precision=1E-7)  {
    as.integer(n),         # Number of balls drawn from urn
    as.double(odds),       # Odds of getting a red ball among one red and one white
    as.double(precision),  # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -35,7 +35,7 @@ function(x, m1, m2, n, odds, precision=1E-7 ) {
    as.integer(n),         # Number of balls drawn from urn
    as.double(odds),       # Odds of getting a red ball among one red and one white
    as.double(precision),  # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }   
 
 
@@ -56,7 +56,7 @@ function(x, m1, m2, n, odds, precision=1E-7, lower.tail=TRUE) {
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
    as.logical(lower.tail), # TRUE: P(X <= x), FALSE: P(X > x)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 # *****************************************************************************
@@ -76,7 +76,7 @@ function(x, m1, m2, n, odds, precision=1E-7, lower.tail=TRUE) {
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
    as.logical(lower.tail), # TRUE: P(X <= x), FALSE: P(X > x)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -100,7 +100,7 @@ function(p, m1, m2, n, odds, precision=1E-7, lower.tail=TRUE) {
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
    as.logical(lower.tail), # TRUE: P(X <= x), FALSE: P(X > x)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }   
 
 
@@ -123,7 +123,7 @@ function(p, m1, m2, n, odds, precision=1E-7, lower.tail=TRUE) {
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
    as.logical(lower.tail), # TRUE: P(X <= x), FALSE: P(X > x)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -143,7 +143,7 @@ function(nran, m1, m2, n, odds, precision=1E-7) {
    as.integer(n),          # Number of balls drawn from urn
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -163,7 +163,7 @@ function(nran, m1, m2, n, odds, precision=1E-7) {
    as.integer(n),          # Number of balls drawn from urn
    as.double(odds),        # Odds of getting a red ball among one red and one white
    as.double(precision),   # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -183,7 +183,7 @@ meanFNCHypergeo <- function(
    .Call("momentsFNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), as.double(precision),
    as.integer(1),       # 1 for mean, 2 for variance
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -203,7 +203,7 @@ meanWNCHypergeo <- function(
    .Call("momentsWNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), as.double(precision),
    as.integer(1),       # 1 for mean, 2 for variance
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -223,7 +223,7 @@ varFNCHypergeo <- function(
    .Call("momentsFNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), as.double(precision),
    as.integer(2),       # 1 for mean, 2 for variance
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -243,7 +243,7 @@ varWNCHypergeo <- function(
    .Call("momentsWNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), as.double(precision),
    as.integer(2),       # 1 for mean, 2 for variance
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -264,7 +264,7 @@ modeFNCHypergeo <- function(
    is.numeric(odds));
    .Call("modeFNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), 
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -283,7 +283,7 @@ modeWNCHypergeo <- function(
    is.numeric(odds), is.numeric(precision));
    .Call("modeWNCHypergeo", as.integer(m1), as.integer(m2),         
    as.integer(n), as.double(odds), as.double(precision),
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -303,7 +303,7 @@ function(mu, m1, m2, n, precision=0.1)  {
    as.integer(m2),        # Number of white balls in urn
    as.integer(n),         # Number of balls drawn from urn
    as.double(precision),  # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -322,7 +322,7 @@ function(mu, m1, m2, n, precision=0.1)  {
    as.integer(m2),        # Number of white balls in urn
    as.integer(n),         # Number of balls drawn from urn
    as.double(precision),  # Precision of calculation
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -342,7 +342,7 @@ function(mu, n, N, odds, precision=0.1)  {
    as.integer(N),         # Number of balls in urn before sampling
    as.double(odds),       # Odds of getting a red ball among one red and one white
    as.double(precision),  # Precision of calculation (ignored)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
@@ -362,7 +362,7 @@ function(mu, n, N, odds, precision=0.1)  {
    as.integer(N),         # Number of balls in urn before sampling
    as.double(odds),       # Odds of getting a red ball among one red and one white
    as.double(precision),  # Precision of calculation (ignored)
-   PACKAGE = "BiasedUrn");
+   PACKAGE = "BiasedUrn52");
 }
 
 
